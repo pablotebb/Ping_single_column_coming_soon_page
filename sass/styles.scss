@@ -1,3 +1,124 @@
 @use "variables";
 @use "initial";
 @use "footer";
+
+.main-container {
+  // border: 1px solid red;
+  width: 350px;
+  height: 780px;
+  margin: 90px auto;
+}
+
+.section-presentation {
+  &__image {
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    width: 116px;
+    height: 35px;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 43px;
+  }
+  &__title {
+    font-size: 1.3em;
+    text-align: center;
+    color: variables.$Gray;
+    font-weight: 300;
+    margin-bottom: 17px;
+    span {
+      color: variables.$Very-Dark-Blue;
+      font-weight: 700;
+    }
+  }
+  &__description {
+    font-size: 0.7em;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+}
+
+.section-form {
+  // border: 1px solid blue;
+  width: 300px;
+  margin: auto;
+  form {
+    input[type="text"] {
+      width: 100%;
+      height: 43px;
+      border-radius: 20px;
+      border: none;
+      border: 1px solid variables.$Pale-Blue;
+      padding-left: 30px;
+      &:focus {
+        outline: none;
+      }
+    }
+    #error {
+      font-size: 0.5em;
+      color: variables.$Light-Red;
+      margin-left: 30px;
+      margin-bottom: 5px;
+      visibility: hidden;
+    }
+    input[type="submit"] {
+      width: 100%;
+      height: 43px;
+      background-color: variables.$Blue;
+      border: none;
+      border-radius: 20px;
+      color: variables.$White;
+      font-weight: 400;
+      box-shadow: 12px 12px 12px variables.$White;
+      margin-bottom: 80px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.section-picture {
+  background-image: url(../images/illustration-dashboard.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90%;
+  height: 300px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.section-social-network {
+  // border: 1px solid red;
+  width: 183px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 70px;
+
+  .icon-sn {
+    .icon {
+      display: grid;
+      place-content: center;
+      width: 30px;
+      height: 30px;
+      fill: variables.$Blue;
+      border: 1px solid variables.$White;
+      border-radius: 50%;
+      &:hover {
+        background-color: variables.$Blue;
+        border: 8px solid variables.$Blue;
+        fill: variables.$White;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.copy-right {
+  // border: 1px solid yellow;
+  width: 85%;
+  font-size: 0.8em;
+  color: variables.$Gray;
+  margin: auto;
+}
