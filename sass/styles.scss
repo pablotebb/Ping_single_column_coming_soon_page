@@ -52,6 +52,9 @@
       &:focus {
         outline: none;
       }
+      &::placeholder {
+        color: variables.$Gray-pale;
+      }
     }
     #error {
       font-size: 0.5em;

@@ -75,6 +75,10 @@ body {
   outline: none;
 }
 
+.section-form form input[type=text]::placeholder {
+  color: hsla(0deg, 0%, 59%, 0.3);
+}
+
 .section-form form #error {
   font-size: 0.5em;
   color: hsl(354deg, 100%, 66%);
